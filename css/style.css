@@ -1,0 +1,248 @@
+header{
+    display: flex;
+    justify-content: start;
+    margin: 2vh;
+    gap: 3vh;
+    align-items: center;
+    font-size: 20px;
+}
+
+header input {
+    width: 60vh;
+    padding: 1vh 1vh;
+    border-radius: 8px;
+}
+ 
+* {
+    font-family: "Bitcount Ink", system-ui, sans-serif;
+    color: #f2f2f2;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: #101116;
+}
+
+.search-page {
+    display: flex;
+    flex-direction: column;
+}
+ 
+header a{
+    text-decoration: none;
+}
+
+header input {
+    color: #f2f2f2;
+    background-color: #1c1e26;
+    border: 1px solid #454854;
+}
+
+header input::placeholder {
+    color: #a9acb7;
+}
+
+.content {
+    margin: 2vh;
+    text-align: center;
+}
+
+.search-page .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2vh 20vh;
+}
+
+.content p {
+    font-size: 20px;
+}
+
+.search-page .content h1 {
+    font-size: clamp(2.25rem, 5vw, 4rem);
+}
+
+.search-page .content p {
+    margin-bottom: 12vh;
+}
+
+.search-catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: 0 auto;
+}
+
+.search-field {
+    position: relative;
+    width: min(60vh, 90vw);
+}
+
+.search-catalog input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #454854;
+    border-radius: 8px;
+    color: #f2f2f2;
+    background-color: #1c1e26;
+}
+
+.catalog-search {
+    display: flex;
+    justify-content: center;
+    margin: 0 16px 16px;
+}
+
+.catalog-search .search-field {
+    width: min(60vh, 90vw);
+}
+
+.catalog-search input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #454854;
+    border-radius: 8px;
+    color: #f2f2f2;
+    background-color: #1c1e26;
+}
+
+.suggestions {
+    position: absolute;
+    z-index: 2;
+    top: calc(100% + 4px);
+    left: 0;
+    display: none;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #454854;
+    border-radius: 8px;
+    background-color: #1c1e26;
+    text-align: left;
+}
+
+.suggestions.visible {
+    display: block;
+}
+
+.suggestion {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    border: 0;
+    background: transparent;
+    color: #f2f2f2;
+    cursor: pointer;
+    text-align: left;
+}
+
+.suggestion:hover,
+.suggestion:focus {
+    background-color: #30333f;
+}
+
+.poster-preview {
+    position: fixed;
+    z-index: 3;
+    display: none;
+    width: 110px;
+    padding: 4px;
+    border: 1px solid #454854;
+    border-radius: 6px;
+    background-color: #1c1e26;
+    pointer-events: none;
+}
+
+.poster-preview.visible {
+    display: block;
+}
+
+.poster-preview img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.catalog-link,
+.back-to-search {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 1px solid #454854;
+    border-radius: 8px;
+    background-color: #1c1e26;
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.catalog-link:hover,
+.back-to-search:hover {
+    background-color: #30333f;
+}
+
+.back-to-search {
+    margin: 0 16px 16px;
+}
+
+.meny {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 8px 16px;
+}
+
+.no-results {
+    margin: 16px;
+    text-align: center;
+}
+ 
+.Produkt1{
+    flex: 0 0 240px;
+    scroll-snap-align: start;
+    border: 1px solid #393c47;
+    border-radius: 5px;
+    padding: 16px;
+    background-color: #1c1e26;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.Produkt1:hover{
+    background-color: #252833;
+}
+
+.Produkt1 img{
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: contain;
+    object-position: center;
+    background-color: #101116;
+    border-radius: 3px;
+}
+ 
+.meny p{
+    color:#227100;
+}
+ 
+.meny button{
+    color: #f2f2f2;
+    background-color: #1c1e26;
+    border-radius: 5px;
+    /* border: none; */
+    cursor: pointer;
+}
+ 
+.meny button:hover{
+    background-color: #30333f;
+    transform: scale(1.05);
+}
+ 

@@ -4,41 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sony Ripper Main</title>
+    <link rel="icon" type="image/x-icon" href="/bilder/favicon_2.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <a href="">Forside</a>
-        <input type="text" placeholder="Søk...">
+        <a href="main.html">Forside</a>
         <a href="">Kontakt</a>
         <a href="">Om oss</a>
     </header>
     <div class="content">
-        <h1>Welcome to Sony Ripper!</h1>
-        <p>Tired of Sony? Pirate their games eaily!</p>
- 
+        <h1>Catalog</h1>
     </div>
- 
-    <div class="meny">
-        <a class="Produkt1" href="magnet:?xt=urn:btih:8e1587f03972a35d4008dac703854bae213021d1&dn=%5Bdixen18%5D%20Marvel%27s%20Spider%20Man%20-%20Remastered&xl=45131870041&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann&tr=http%3A%2F%2Fretracker.local%2Fannounce">
-            <img src="https://gmedia.playstation.com/is/image/SIEPDC/spiderman-remastered-hero-banner-mobile-01-ps5-en-29jul22?$1200px$" alt="">
-            Marvel’s Spider-Man Remastered
-        </a>
-        <a class="Produkt1" href="magnet:?xt=urn:btih:60d8704bb491a8f6f366a529db6397b7d5ca9f5b&dn=%5Bdixen18%5D%20God%20of%20War%20Ragnarok&xl=80321917660&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann&tr=http%3A%2F%2Fretracker.local%2Fannounce">
-            <img src="https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-raganok-clean-keyart-01-en-10mar22?$1200px$" alt="">
-            God of War &amp; God of War Ragnarök
-        </a>
-        <a class="Produkt1" href="magnet:?xt=urn:btih:43c9ed13dd0c52ac7462999eb4fe423516bf1275&dn=%5Bdixen18%5D%20Marvel%27s%20SpiderMan%20-%20Miles%20Morales&xl=32778386459&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann&tr=http%3A%2F%2Fretracker.local%2Fannounce">
-            <img src="https://gmedia.playstation.com/is/image/SIEPDC/spiderman-miles-morales-boxart-02-en-20jul20?$1200px$" alt="">
-            Marvel’s Spider-Man: Miles Morales
-        </a>
-        <a class="Produkt1" href="magnet:?xt=urn:btih:93bfece3b3ea0696dbcaa3ca61215e4fcd5933b5&dn=%5Bdixen18%5D%20Marvels%20Spider%20Man%202&xl=79364022956&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann&tr=http%3A%2F%2Fretracker.local%2Fannounce">
-            <img src="https://gmedia.playstation.com/is/image/SIEPDC/spider-man-2-hero-banner-mobile-01-en-31may23?$1200px$" alt="">
-            Marvel’s Spider-Man 2
-        </a>
+    <div class="catalog-search">
+        <div class="search-field">
+            <input id="game-search" type="search" placeholder="Search games..." aria-label="Search games" autocomplete="off">
+            <div id="search-suggestions" class="suggestions" role="listbox"></div>
+        </div>
     </div>
+    <a class="back-to-search" href="main.html">&lt;-- back to the search</a>
+    <div id="product-list" class="meny"></div>
+    <p id="no-results" class="no-results" hidden>No games found.</p>
+    <div id="poster-preview" class="poster-preview" aria-hidden="true">
+        <img alt="">
+    </div>
+    <script src="js/produkter.js"></script>
+    <script src="js/search_script.js"></script>
 </body>
 </html>
