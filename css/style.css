@@ -220,6 +220,16 @@ header input::placeholder {
     background-color: #252833;
 }
 
+.product-name {
+    font-size: 0.95rem;
+}
+
+.product-rating {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    color: #f5c518;
+}
+
 .Produkt1 img{
     width: 100%;
     aspect-ratio: 2 / 3;
@@ -244,5 +254,40 @@ header input::placeholder {
 .meny button:hover{
     background-color: #30333f;
     transform: scale(1.05);
+}
+
+.omoss-content {
+    max-width: 640px;
+    margin: 6vh auto;
+    text-align: left;
+    line-height: 1.7;
+}
+
+.omoss-content h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.omoss-content p {
+    font-size: 1.3rem;
+    color: #c8cad4;
+    margin-bottom: 1.4em;
+}
+
+.github-link {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 12px 20px;
+    border: 1px solid #454854;
+    border-radius: 8px;
+    background-color: #1c1e26;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.github-link:hover {
+    background-color: #30333f;
 }
  

@@ -39,7 +39,16 @@ function renderCatalog(searchText) {
         poster.src = product.poster;
         poster.alt = `${product.name} poster`;
 
-        card.append(poster, document.createTextNode(product.name));
+        const name = document.createElement("span");
+        name.className = "product-name";
+        name.textContent = product.name;
+
+        const stars = document.createElement("span");
+        stars.className = "product-rating";
+        stars.setAttribute("aria-label", `Rating: ${product.rating} out of 5`);
+        stars.textContent = "★".repeat(product.rating) + "☆".repeat(5 - product.rating);
+
+        card.append(poster, name, stars);
         productList.append(card);
     });
 
